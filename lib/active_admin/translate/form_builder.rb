@@ -12,7 +12,7 @@ module ActiveAdmin
       #
       def translate_inputs(name = :translations, &block)
         if self.respond_to?(:form_buffers)
-          html = form_buffers.last
+          html = form_buffers
         else
           html = "".html_safe
         end
